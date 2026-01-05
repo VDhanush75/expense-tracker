@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Request Money</title>
+<link rel="stylesheet" href="css/request.css">
+</head>
+<body>
+
+<header class="topbar">
+  <span class="back" onclick="goHome()">←</span>
+  <h2>Request Money</h2>
+</header>
+
+<main class="container">
+
+<form id="requestForm">
+
+  <label for="memberName">Select Family Member</label>
+  <select id="memberName" required>
+    <option value="">Choose</option>
+    <option>Family</option>
+    <option>Dad</option>
+    <option>Mom</option>
+    <option>Nikhil</option>
+    <option>Suma</option>
+    <option>Durga</option>
+    <option>Dhanush</option>
+    <option>Varu</option>
+  </select>
+
+  <label for="amount">Amount</label>
+  <input type="number" id="amount" required>
+
+  <label for="reason">Reason</label>
+  <textarea id="reason" required></textarea>
+
+  <button type="submit">Send Request</button>
+
+</form>
+
+</main>
+
+<script src="js/request.js"></script>
+</body>
+</html>

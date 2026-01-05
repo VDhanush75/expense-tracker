@@ -1,0 +1,99 @@
+body {
+  margin:0;
+  font-family: Arial, sans-serif;
+  background:#f3f6fc;
+}
+
+.topbar{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:14px 18px;
+  background:white;
+  box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+.back-btn{
+  padding-left: 25px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.menu-btn{font-size:22px;cursor:pointer}
+
+.dashboard{
+  max-width:1100px;
+  margin:auto;
+  padding:20px;
+}
+
+.kpi-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+}
+
+.kpi{
+  background:white;
+  padding:20px;
+  border-radius:14px;
+  box-shadow:0 6px 18px rgba(0,0,0,.08);
+}
+
+.kpi span{
+  font-size:26px;
+  color:#1e3c72;
+}
+
+.analytics .card{
+  background:white;
+  margin-top:30px;
+  padding:20px;
+  border-radius:14px;
+  box-shadow:0 6px 18px rgba(0,0,0,.08);
+}
+
+.bar{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin:10px 0;
+}
+
+.bar-track{
+  flex:1;
+  background:#e5ecff;
+  border-radius:10px;
+  overflow:hidden;
+}
+
+.bar-fill{
+  height:12px;
+  background:linear-gradient(90deg,#1e3c72,#2a5298);
+}
+
+.sidebar{
+  position:fixed;
+  top:0;
+  left:-220px;
+  width:220px;
+  height:100%;
+  background:white;
+  box-shadow:2px 0 12px rgba(0,0,0,.1);
+  padding-top:60px;
+  transition:.3s;
+}
+
+.sidebar.active{left:0}
+
+.side-item{
+  padding:14px 20px;
+  cursor:pointer;
+}
+
+.side-item:hover{background:#f1f5ff}
+
+.signout{color:red}
+
+
+/* Chart styles */

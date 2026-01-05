@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Member Dashboard</title>
+<link rel="stylesheet" href="css/member-home.css">
+</head>
+<body>
+
+<header class="topbar">
+  <span class="menu-btn" onclick="toggleSidebar()">☰</span>
+  <h2>Family Dashboard</h2>
+</header>
+
+<aside class="sidebar" id="sidebar">
+  <span class="back-btn" onclick="goPage('member-home.html')">←</span>
+  <div class="side-item active" onclick="goPage('member-home.html')">🏠 Home</div>
+  <div class="side-item" onclick="goPage('request.html')">💸 Request</div>
+  <div class="side-item" onclick="goPage('status.html')">📊 Status</div>
+  <div class="side-item" onclick="goPage('export.html')">📤 Export</div>
+  <div class="side-item signout" onclick="logout()">🚪 Sign Out</div>
+</aside>
+
+<main class="dashboard">
+
+<section class="kpi-grid">
+  <div class="kpi">
+    <h4>Total Family Expense</h4>
+    <span id="totalExpense">₹0</span>
+  </div>
+</section>
+
+<h3>Family Members</h3>
+<div class="members-grid" id="memberCards"></div>
+
+</main>
+
+<script src="js/member-home.js"></script>
+</body>
+</html>

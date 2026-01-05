@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Request Status</title>
+<link rel="stylesheet" href="css/status.css">
+</head>
+<body>
+
+<header class="topbar">
+  <span class="back" onclick="goHome()">←</span>
+  <h2>Request Status</h2>
+</header>
+
+<main class="container">
+
+<select id="memberSelect" onchange="loadStatus()">
+  <option value="">Select Family Member</option>
+    <option>Family</option>
+    <option>Dad</option>
+    <option>Mom</option>
+    <option>Nikhil</option>
+    <option>Suma</option>
+    <option>Durga</option>
+    <option>Dhanush</option>
+    <option>Varu</option>
+</select>
+
+<div id="statusList"></div>
+
+
+</main>
+
+<script src="/frontend/js/status.js"></script>
+</body>
+</html>

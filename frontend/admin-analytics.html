@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Analytics | Extract</title>
+<link rel="stylesheet" href="css/admin-analytics.css">
+</head>
+<body>
+
+<header class="topbar">
+  <span class="menu-btn" onclick="toggleSidebar()">☰</span>
+  <h2>Family Finance Dashboard</h2>
+</header>
+
+<aside class="sidebar" id="sidebar">
+  <span class="back-btn" onclick="goAnalytics()">←</span>
+  <div class="side-item active" onclick="goAnalytics()">📊 Analytics</div>
+  <div class="side-item" onclick="goAddFund()">💰 Add Fund</div>
+  <div class="side-item" onclick="goRequests()">📨 Requests</div>
+  <div class="side-item signout" onclick="logout()">🚪 Sign Out</div>
+</aside>
+
+<main class="dashboard">
+
+<section class="kpi-grid">
+  <div class="kpi">
+    <h4>Total Fund</h4>
+    <span id="totalFund">₹0</span>
+  </div>
+  <div class="kpi">
+    <h4>Total Expense</h4>
+    <span id="totalExpense">₹0</span>
+  </div>
+  <div class="kpi">
+    <h4>Current Balance</h4>
+    <span id="currentBalance">₹0</span>
+  </div>
+</section>
+<section class="analytics">
+
+  <div class="chart-card">
+    <h3>Member Expense Distribution</h3>
+    <canvas id="memberPie"></canvas>
+  </div>
+
+  <div class="chart-card">
+    <h3>Expense Trend Analysis</h3>
+    <canvas id="trendBar"></canvas>
+  </div>
+
+</section>
+
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/admin-analytics.js"></script>
+
+
+</body>
+</html>
