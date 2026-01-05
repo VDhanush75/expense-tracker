@@ -1,10 +1,12 @@
 from pymongo import MongoClient
+import os
+from dotenv import load_dotenv
 
-client = MongoClient("mongodb+srv://lucky:test@cluster0.lmcjypu.mongodb.net/test_db")
+load_dotenv()
 
+client = MongoClient(os.environ.get("MONGO_URI"))
 db = client["test_db"]
 
 requests_col = db["requests"]
-
 
 print("Connected to DB:", db.name)
