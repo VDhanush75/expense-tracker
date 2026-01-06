@@ -27,7 +27,7 @@ window.location.href="admin-analytics.html";
 
 // Load Fund History
 async function loadFundHistory(){
-  const res = await fetch("http://127.0.0.1:5000/fund-history");
+  const res = await fetch("https://expense-tracker-53vr.onrender.com/fund-history");
   const data = await res.json();
 
   const box = document.getElementById("fundHistory");
