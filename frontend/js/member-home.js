@@ -1,7 +1,7 @@
 const members = ["Family","Dad","Mom","Nikhil","Suma","Durga","Dhanush","Varu"];
 
 async function loadDashboard(){
-  const res = await fetch("http://127.0.0.1:5000/all-expenses");
+  const res = await fetch("https://expense-tracker-53vr.onrender.com/all-expenses");
   const expenses = await res.json();
 
   let total = 0;
