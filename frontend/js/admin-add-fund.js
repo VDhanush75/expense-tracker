@@ -10,7 +10,7 @@ document.getElementById("fundForm").onsubmit = async (e) => {
     return;
   }
 
-  await fetch("http://127.0.0.1:5000/add-fund", {
+  await fetch("https://expense-tracker-53vr.onrender.com/add-fund", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ amount: fundAmount, reason: fundReason })
