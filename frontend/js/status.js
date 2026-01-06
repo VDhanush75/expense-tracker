@@ -9,7 +9,7 @@ async function loadStatus(){
     return;
   }
 
-  const res = await fetch(`http://127.0.0.1:5000/member-requests?memberName=${memberName}`);
+  const res = await fetch(`https://expense-tracker-53vr.onrender.com/member-requests?memberName=${memberName}`);
 
   if(!res.ok){
     console.error(await res.text());
