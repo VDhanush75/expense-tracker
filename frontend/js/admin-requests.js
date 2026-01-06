@@ -48,7 +48,7 @@ async function loadRequests(){
 
 // Button handler — must be global
 async function handleAction(id, action){
-  const res = await fetch("http://127.0.0.1:5000/update-request", {
+  const res = await fetch("https://expense-tracker-53vr.onrender.com/update-request", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ requestId: id, action })
