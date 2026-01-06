@@ -7,7 +7,7 @@ document.getElementById("requestForm").addEventListener("submit", async e => {
   const reason = document.getElementById("reason").value;
 
   try {
-    const res = await fetch("http://127.0.0.1:5000/add-request", {
+    const res = await fetch("https://expense-tracker-53vr.onrender.com/add-request", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ memberName, amount, reason })
