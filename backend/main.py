@@ -3,7 +3,9 @@ from flask_cors import CORS
 from datetime import datetime
 
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": "*"}}, supports_credentials=True)
+# CORS(app, resources={r"/*": {"origins": "*"}}, supports_credentials=True)
+CORS(app, resources={r"/*": {"origins": os.getenv("FRONTEND_URL")}})
+
 
 from app.config.db import db
 from app.routes.auth_routes import auth_bp
