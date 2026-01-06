@@ -1,6 +1,6 @@
 // Load all requests
 async function loadRequests(){
-  const res = await fetch("http://127.0.0.1:5000/admin-requests");
+  const res = await fetch("https://expense-tracker-53vr.onrender.com/admin-requests");
   const data = await res.json();
 
   const newBox = document.getElementById("newRequests");
