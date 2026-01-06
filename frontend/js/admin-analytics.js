@@ -1,6 +1,6 @@
 
 async function loadAnalytics(){
-  const res = await fetch("http://127.0.0.1:5000/analytics");
+  const res = await fetch("https://expense-tracker-53vr.onrender.com/analytics");
   const data = await res.json();
 
   document.getElementById("totalFund").textContent = "₹" + data.totalFund;
