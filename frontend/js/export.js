@@ -2,7 +2,7 @@
 let previewData = [];
 
 async function loadPreview(){
-  const res = await fetch("http://127.0.0.1:5000/export-preview");
+  const res = await fetch("https://expense-tracker-53vr.onrender.com/export-preview");
   const data = await res.json();
 
   previewData = data;
