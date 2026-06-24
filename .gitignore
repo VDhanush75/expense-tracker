@@ -12,6 +12,7 @@ venv/
 env/
 
 # Environment Variables
+backend/.env
 .env
 .env.*
 
